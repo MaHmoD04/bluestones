@@ -449,10 +449,11 @@
           <form class="d-flex">
             <div class="parent">
               <div class="box name">
-                <input type="text" placeholder="Full Name" class="form-control">
+                <input type="text" placeholder="Full Name" class="form-control" name="fullName" required minlength="5" maxlength="20"
+                pattern="[A-Za-z]+" title="Only letters are allowed">
               </div>
               <div class="box email">
-                <input type="email" placeholder="Business Email" class="form-control">
+                <input type="email" placeholder="Business Email" class="form-control" name="email" required>
               </div>
               <div class="box options">
                 <select class="js-example-basic-single" name="state">
@@ -658,13 +659,14 @@
             </div>
             <div class="parent">
               <div class="box company">
-                <input type="text" placeholder="Your Company Name" class="form-control">
+                <input type="text" placeholder="Your Company Name" class="form-control" name="companyName" required
+                maxlength="20">
               </div>
               <div class="box phone">
-                <input type="text" placeholder="Phone Number" class="form-control">
+                <input type="tel" placeholder="Phone Number" class="form-control" name="phone" required pattern="[0-9]+" inputmode="numeric" title="Only Numbers are allowed">
               </div>
               <div class="box interested">
-                <input type="text" placeholder="What service are you Interested in ?" class="form-control">
+                <input type="text" placeholder="What service are you Interested in ?" class="form-control" name="interested" required>
               </div>
             </div>
             <textarea class="form-control" placeholder="Tell us about your Projects"></textarea>

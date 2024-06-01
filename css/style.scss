@@ -30,7 +30,7 @@
 /*fonts*/
 body {
   font-family: "Poppins-Regular";
-  overflow-x: hidden !important;
+  overflow-x: hidden ;
 }
 /*special title*/
 .special-title {
@@ -183,22 +183,28 @@ header {
         }
       }
       .list-link {
+        display: flex;
         transition: $transition;
         -webkit-transition: $transition;
         -moz-transition: $transition;
         -ms-transition: $transition;
         -o-transition: $transition;
         @media (max-width: 1199px) {
+          display: none;
           background-color: $white-color;
           padding: 20px 20px;
           flex-direction: column;
           position: absolute;
-          right: -176px;
+          right: 0;
           top: 134px;
           z-index: 1111;
+          width: 100%;
         }
         @media (max-width: 991px) {
           top: 246px;
+        }
+        @media (max-width: 480px) {
+          top: 219px;
         }
         gap: 25px;
         li:not(:last-child) {
@@ -241,7 +247,9 @@ header {
 .build {
   // height: calc(100vh - 134px);
   .content-build {
-    width: 102%;
+    @media (min-width: 1199px) {
+      width: 102%;
+    }
     @media (max-width: 991px) {
       flex-wrap: wrap;
     }
@@ -997,31 +1005,26 @@ footer {
         &:hover:nth-child(1) {
           svg {
             color: #1877f2;
-
           }
         }
         &:hover:nth-child(2) {
           svg {
             color: #1da1f2;
-
           }
         }
         &:hover:nth-child(3) {
           svg {
             color: #e1306c;
-
           }
         }
         &:hover:nth-child(4) {
           svg {
-            color: #0a66c2; 
-
+            color: #0a66c2;
           }
         }
         &:hover:nth-child(5) {
           svg {
             color: red;
-
           }
         }
         svg {

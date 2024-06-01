@@ -885,4 +885,188 @@ header .bottom-header .content-bottom-header .list-link li:last-child a:hover {
   color: #ffffff;
 }
 
-/* end form section*//*# sourceMappingURL=style.css.map */
+/* end form section*/
+/* start footer*/
+footer {
+  padding: 60px 0;
+  background-color: #111111;
+}
+footer .top-footer {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #999999;
+}
+footer .top-footer .logo h1 {
+  margin: 0;
+  color: #d8d8d8;
+  font-family: "Poppins-ExtraBold";
+  font-size: 50px;
+}
+footer .top-footer .logo p {
+  color: #999999;
+  position: relative;
+}
+footer .top-footer .logo p::before, footer .top-footer .logo p::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 90px;
+  height: 2px;
+  background-color: #999999;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+footer .top-footer .logo p::before {
+  left: 5px;
+}
+footer .top-footer .logo p::after {
+  right: 5px;
+}
+footer .top-footer .country:nth-child(2) {
+  margin-bottom: 40px;
+}
+footer .top-footer .country h4 {
+  color: #ffffff;
+  font-family: "Poppins-Bold";
+  font-size: 20px;
+}
+footer .top-footer .country .box svg,
+footer .top-footer .country .box p {
+  color: #999999;
+}
+footer .top-footer .country .box p {
+  text-wrap: wrap;
+  font-family: "Poppins-Light";
+}
+footer .top-footer .country .box svg {
+  font-size: 19px;
+  margin-right: 10px;
+}
+footer .top-footer .skills {
+  flex-wrap: wrap;
+}
+footer .top-footer .skills .box {
+  flex: 1 1 50%;
+}
+footer .top-footer .skills .box:nth-child(1), footer .top-footer .skills .box:nth-child(2) {
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+  footer .top-footer .skills .box:nth-child(3), footer .top-footer .skills .box:nth-child(4) {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  footer .top-footer .skills .box {
+    flex-basis: 100%;
+  }
+}
+footer .top-footer .skills .box h4 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+footer .top-footer .skills .box ul li a {
+  color: #d8d8d8;
+}
+footer .top-footer .skills .box ul li a:hover {
+  text-decoration: underline;
+}
+footer .bottom-footer {
+  padding-top: 35px;
+}
+@media (max-width: 991px) {
+  footer .bottom-footer {
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+footer .bottom-footer .copyrights p {
+  color: #999999;
+}
+footer .bottom-footer .copyrights .link {
+  gap: 48px;
+}
+@media (max-width: 991px) {
+  footer .bottom-footer .copyrights .link {
+    justify-content: center !important;
+    align-items: center;
+    gap: 20px;
+  }
+}
+footer .bottom-footer .copyrights .link a {
+  color: #999999;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+}
+footer .bottom-footer .copyrights .link a.active {
+  position: relative;
+}
+footer .bottom-footer .copyrights .link a.active::after, footer .bottom-footer .copyrights .link a.active::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  background-color: #999999;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  footer .bottom-footer .copyrights .link a.active::after, footer .bottom-footer .copyrights .link a.active::before {
+    display: none;
+  }
+}
+footer .bottom-footer .copyrights .link a.active::after {
+  right: -20px;
+}
+footer .bottom-footer .copyrights .link a.active::before {
+  left: -20px;
+}
+footer .bottom-footer .copyrights .link a:hover {
+  text-shadow: 1px 1px 10px #ffffff;
+}
+footer .bottom-footer .social-icon {
+  gap: 25px;
+}
+footer .bottom-footer .social-icon a {
+  padding: 2px;
+}
+footer .bottom-footer .social-icon a:hover:nth-child(1) svg {
+  color: #1877f2;
+}
+footer .bottom-footer .social-icon a:hover:nth-child(2) svg {
+  color: #1da1f2;
+}
+footer .bottom-footer .social-icon a:hover:nth-child(3) svg {
+  color: #e1306c;
+}
+footer .bottom-footer .social-icon a:hover:nth-child(4) svg {
+  color: #0a66c2;
+}
+footer .bottom-footer .social-icon a:hover:nth-child(5) svg {
+  color: red;
+}
+footer .bottom-footer .social-icon a svg {
+  font-size: 20px;
+  color: #999999;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+  -moz-transition: 0.35s;
+  -ms-transition: 0.35s;
+  -o-transition: 0.35s;
+}
+
+/* end footer*//*# sourceMappingURL=style.css.map */
